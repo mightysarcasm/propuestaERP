@@ -41,7 +41,6 @@
 	padding: 0 calc(var(--sp) * 8);
   }
 
-  /* MONO LABEL */
   .label {
 	font-family: var(--font-mono);
 	font-size: .6rem;
@@ -53,7 +52,6 @@
   }
   .label--blue { color: var(--cobalt-600); }
 
-  /* COVER */
   .cover {
 	padding-block: calc(var(--sp) * 24) calc(var(--sp) * 20);
 	border-bottom: 1px solid var(--stone-300);
@@ -76,18 +74,7 @@
 	margin-bottom: calc(var(--sp) * 6);
 	animation: blur-in .6s ease both .2s;
   }
-
   .cover-title em { font-style: italic; color: var(--cobalt-600); }
-
-  .cover-sub {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 180%;
-	color: var(--stone-600);
-	max-width: 36rem;
-	text-align: justify;
-	animation: blur-in .6s ease both .35s;
-  }
 
   .cover-foot {
 	display: flex;
@@ -96,7 +83,6 @@
 	animation: blur-in .6s ease both .45s;
   }
 
-  /* SECTIONS */
   .section {
 	padding-block: calc(var(--sp) * 24);
 	border-bottom: 1px solid var(--stone-300);
@@ -116,7 +102,6 @@
 	margin-bottom: calc(var(--sp) * 10);
   }
 
-  /* BODY PROSE */
   .p {
 	font-size: 1rem;
 	line-height: 180%;
@@ -126,7 +111,6 @@
   }
   .p + .p { margin-top: calc(var(--sp) * 6); }
 
-  /* CAMBIOS LIST (Replaced Grid) */
   .c-list {
 	display: flex;
 	flex-direction: column;
@@ -139,11 +123,7 @@
 	padding-bottom: calc(var(--sp) * 8);
 	border-bottom: 1px solid var(--stone-200);
   }
-
-  .c-item:last-child {
-	border-bottom: none;
-	padding-bottom: 0;
-  }
+  .c-item:last-child { border-bottom: none; padding-bottom: 0; }
 
   .c-n {
 	display: block;
@@ -156,6 +136,7 @@
   }
 
   .c-title {
+	font-family: var(--font-serif);
 	font-size: 1.15rem;
 	font-weight: 500;
 	line-height: 1.35;
@@ -171,15 +152,12 @@
 	color: var(--stone-600);
   }
 
-  /* MODULE TABLE */
   .mod-table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: calc(var(--sp) * 10);
   }
-
   .mod-table thead tr { border-bottom: 1px solid var(--stone-950); }
-
   .mod-table th {
 	font-family: var(--font-mono);
 	font-size: .55rem;
@@ -193,7 +171,6 @@
   }
   .mod-table th:nth-child(2) { text-align: center; }
   .mod-table th:last-child   { text-align: right; }
-
   .mod-table td {
 	padding: calc(var(--sp) * 4) 0;
 	border-bottom: 1px solid var(--stone-200);
@@ -231,10 +208,7 @@
 	font-variant-ligatures: none;
 	color: var(--stone-600);
   }
-  
-  
 
-  /* BLOCKQUOTE */
   blockquote {
 	border-left: .25rem solid var(--stone-300);
 	padding-left: calc(var(--sp) * 4);
@@ -246,7 +220,6 @@
   }
   blockquote strong { font-style: normal; color: var(--stone-950); font-weight: 500; }
 
-  /* PRICE */
   .price-top {
 	display: flex;
 	justify-content: space-between;
@@ -259,11 +232,7 @@
 	margin-top: calc(var(--sp) * 10);
   }
 
-  .price-desc {
-	font-size: 1rem;
-	line-height: 1.5;
-	max-width: 28rem;
-  }
+  .price-desc { font-size: 1rem; line-height: 1.5; max-width: 28rem; }
 
   .price-num {
 	font-size: 3rem;
@@ -272,7 +241,6 @@
 	color: var(--cobalt-600);
 	white-space: nowrap;
   }
-
   .price-num sup {
 	font-family: var(--font-mono);
 	font-size: .6rem;
@@ -288,21 +256,13 @@
 	grid-template-columns: 1fr 1fr;
 	border-bottom: 1px solid var(--stone-300);
   }
-
   .price-half {
 	padding: calc(var(--sp) * 6) 0;
 	border-right: 1px solid var(--stone-300);
   }
   .price-half:last-child { border-right: none; padding-left: calc(var(--sp) * 8); }
-
   .price-half-lbl { display: block; margin-bottom: calc(var(--sp) * 2); }
-
-  .price-half-amt {
-	font-size: 1.35rem;
-	font-weight: 400;
-	letter-spacing: -.01em;
-  }
-
+  .price-half-amt { font-size: 1.35rem; font-weight: 400; letter-spacing: -.01em; }
   .price-half-note {
 	font-family: var(--font-sans);
 	font-size: .75rem;
@@ -311,14 +271,12 @@
 	margin-top: calc(var(--sp) * 1);
   }
 
-  /* INCLUDES */
   .inc-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: calc(var(--sp) * 14);
 	margin-top: calc(var(--sp) * 14);
   }
-
   .inc-col h3 {
 	font-family: var(--font-mono);
 	font-size: .55rem;
@@ -328,9 +286,7 @@
 	color: var(--cobalt-600);
 	margin-bottom: calc(var(--sp) * 6);
   }
-
   .inc-list { list-style: none; }
-
   .inc-list li {
 	font-family: var(--font-sans);
 	font-size: .8rem;
@@ -342,7 +298,6 @@
 	display: flex;
 	gap: calc(var(--sp) * 3);
   }
-
   .inc-list li::before {
 	content: '—';
 	font-family: var(--font-mono);
@@ -351,13 +306,11 @@
 	flex-shrink: 0;
 	margin-top: .05rem;
   }
-
   .exc-list li::before {
 	content: '×';
 	color: color-mix(in oklab, var(--stone-950) 20%, transparent);
   }
 
-  /* FUTURE PRICING */
   .f-row {
 	display: flex;
 	justify-content: space-between;
@@ -367,9 +320,7 @@
 	gap: calc(var(--sp) * 8);
   }
   .f-row:first-child { border-top: 1px solid var(--stone-300); }
-
   .f-name { font-size: .9rem; line-height: 1.5; max-width: 32rem; }
-
   .f-price {
 	font-family: var(--font-mono);
 	font-size: .65rem;
@@ -378,7 +329,6 @@
 	white-space: nowrap;
 	font-variant-ligatures: none;
   }
-
   .f-note {
 	font-family: var(--font-sans);
 	font-size: .75rem;
@@ -390,40 +340,6 @@
 	font-style: italic;
   }
 
-  /* CONDITIONS */
-  .cond-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	border-top: 1px solid var(--stone-300);
-	border-left: 1px solid var(--stone-300);
-	margin-top: calc(var(--sp) * 10);
-  }
-
-  .cond {
-	padding: calc(var(--sp) * 8) calc(var(--sp) * 6);
-	border-right: 1px solid var(--stone-300);
-	border-bottom: 1px solid var(--stone-300);
-  }
-
-  .cond h3 {
-	font-family: var(--font-mono);
-	font-size: .55rem;
-	letter-spacing: .2em;
-	text-transform: uppercase;
-	font-variant-ligatures: none;
-	color: var(--cobalt-600);
-	margin-bottom: calc(var(--sp) * 4);
-  }
-
-  .cond p {
-	font-family: var(--font-sans);
-	font-size: .78rem;
-	font-weight: 300;
-	color: var(--stone-600);
-	line-height: 165%;
-  }
-
-  /* FAQs */
   .faq-grid {
 	display: flex;
 	flex-direction: column;
@@ -431,47 +347,22 @@
 	margin-top: calc(var(--sp) * 10);
 	max-width: 36rem;
   }
-
-.faq-q {
-	font-family: var(--font-serif);  /* add this */
+  .faq-q {
+	font-family: var(--font-serif);
 	font-size: 1.15rem;
 	font-weight: 500;
 	line-height: 1.35;
 	margin-bottom: calc(var(--sp) * 2);
 	color: var(--stone-950);
   }
-
   .faq-a {
 	font-family: var(--font-serif);
 	font-size: .9rem;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 160%;
 	color: var(--stone-600);
   }
 
-  /* CLOSING */
-  .closing {
-	padding-block: calc(var(--sp) * 32) calc(var(--sp) * 20);
-	max-width: 36rem;
-  }
-
-  .closing-title {
-	font-size: clamp(2rem, 5vw, 3.2rem);
-	font-weight: 400;
-	line-height: 1.1;
-	letter-spacing: -.02em;
-	margin-bottom: calc(var(--sp) * 6);
-  }
-
-  .closing-sub {
-	font-family: var(--font-sans);
-	font-size: .875rem;
-	font-weight: 300;
-	color: var(--stone-500);
-	line-height: 160%;
-  }
-
-  /* FOOTER */
   .footer {
 	padding-block: calc(var(--sp) * 6);
 	border-top: 1px solid var(--stone-300);
@@ -479,24 +370,21 @@
 	justify-content: space-between;
   }
 
-  /* ANIMATION — matches site's blur-in keyframe */
   @keyframes blur-in {
 	from { opacity: 0; filter: blur(4px); }
 	to   { opacity: 1; filter: blur(0); }
   }
 
-  /* RESPONSIVE */
   @media (max-width: 560px) {
-	.cover-meta  { flex-direction: column; gap: calc(var(--sp) * 2); }
-	.cover-foot  { flex-direction: column; gap: calc(var(--sp) * 3); }
-	.price-top   { flex-direction: column; gap: calc(var(--sp) * 4); }
-	.price-num   { font-size: 2rem; }
+	.cover-meta   { flex-direction: column; gap: calc(var(--sp) * 2); }
+	.cover-foot   { flex-direction: column; gap: calc(var(--sp) * 3); }
+	.price-top    { flex-direction: column; gap: calc(var(--sp) * 4); }
+	.price-num    { font-size: 2rem; }
 	.price-halves { grid-template-columns: 1fr; }
-	.price-half  { border-right: none; }
+	.price-half   { border-right: none; }
 	.price-half:last-child { padding-left: 0; }
-	.inc-grid    { grid-template-columns: 1fr; gap: calc(var(--sp) * 10); }
-	.cond-grid   { grid-template-columns: 1fr; }
-	.footer      { flex-direction: column; gap: calc(var(--sp) * 2); }
+	.inc-grid     { grid-template-columns: 1fr; gap: calc(var(--sp) * 10); }
+	.footer       { flex-direction: column; gap: calc(var(--sp) * 2); }
   }
 </style>
 </head>
@@ -508,32 +396,24 @@
 	<div class="cover-meta">
 	  <span class="label">Propuesta de reconstrucción</span>
 	</div>
-
 	<h1 class="cover-title">ERP<br><em>Penthouse</em></h1>
-
 	<div class="cover-foot">
 	  <span class="label">V 1.0</span>
 	</div>
   </section>
 
-  <!-- 01 -->
+  <!-- 01 — RECONSTRUCCIÓN + CAMBIOS -->
   <section class="section">
 	<span class="sec-label label label--blue">01</span>
 	<h2 class="sec-title">Reconstrucción del Código</h2>
 	<p class="p">Ya tenemos la lógica hasta ahora, pero al cambiarnos de stack (o sea digamos de lenguajes) tengo que reconstruir los módulos. En esta parte también tenemos que ajustar cualquier tipo de problema o falla con los módulos actuales.</p>
-	<p class="p">Mientras a tu sistema actual no le agregues alguna funcionalidad adicional en lo que termino el proyecto, no hay tema en la migración, estoy usando el mismo esquema entonces tu base de datos quedaría intacta. Si hay algunas cosas que quiero tratar sobre los datos en particular porque considero que harían el proceso mas sencillo, sobre todo para cuando haya que expandir la funcionalidad. </p>
-  </section>
-
-  <!-- 02 -->
-  <section class="section">
-	<span class="sec-label label label--blue">02</span>
-	<h2 class="sec-title">Cambios</h2>
+	<p class="p">Mientras a tu sistema actual no le agregues alguna funcionalidad adicional en lo que termino el proyecto, no hay tema en la migración, estoy usando el mismo esquema entonces tu base de datos quedaría intacta. Si hay algunas cosas que quiero tratar sobre los datos en particular porque considero que harían el proceso más sencillo, sobre todo para cuando haya que expandir la funcionalidad.</p>
 
 	<div class="c-list">
 	  <div class="c-item">
 		<span class="c-n">01 —</span>
-		<h3 class="c-title">Menos código</h3>
-		<p class="c-body">Con el cambio el código va a estar mucho más compacto y separado. Actualmente el sistema tiene secciones con código muy extenso y es complicado sobre todo al encontrar y solucionar errores.</p>
+		<h3 class="c-title">Fácil de mantener</h3>
+		<p class="c-body">Si en algún momento otro desarrollador tiene que trabajar en el sistema, el código está organizado de forma que cualquier persona puede entenderlo y continuarlo sin necesidad de que yo esté disponible.</p>
 	  </div>
 	  <div class="c-item">
 		<span class="c-n">02 —</span>
@@ -548,17 +428,16 @@
 	  <div class="c-item">
 		<span class="c-n">04 —</span>
 		<h3 class="c-title">Nueva base de datos</h3>
-		<p class="c-body">También voy a cambiar el tipo de base de datos. El sistema actual tiene un límite sobre todo pensando en que con los años se van a acumular los datos, incluidos futuros modulos como el inventario o reportes avanzados.</p>
-		</div>
+		<p class="c-body">También voy a cambiar el tipo de base de datos. El sistema actual tiene un límite sobre todo pensando en que con los años se van a acumular los datos, incluidos futuros módulos como el inventario o reportes avanzados.</p>
 	  </div>
 	</div>
   </section>
 
-  <!-- 03 -->
+  <!-- 02 — TIMELINE -->
   <section class="section">
-	<span class="sec-label label label--blue">03</span>
+	<span class="sec-label label label--blue">02</span>
 	<h2 class="sec-title">Timeline</h2>
-	<p class="p">Esto es un estimado, me estoy poniendo un colchón de tiempo para poder entregar lo mejor posible. </p>
+	<p class="p">Esto es un estimado, me estoy poniendo un colchón de tiempo para poder entregar lo mejor posible.</p>
 
 	<table class="mod-table">
 	  <thead>
@@ -587,9 +466,9 @@
 	</blockquote>
   </section>
 
-  <!-- 04 -->
+  <!-- 03 — COTIZACIÓN -->
   <section class="section">
-	<span class="sec-label label label--blue">04</span>
+	<span class="sec-label label label--blue">03</span>
 	<h2 class="sec-title">Cotización</h2>
 
 	<div class="price-top">
@@ -615,7 +494,7 @@
 		<h3>Qué incluye</h3>
 		<ul class="inc-list">
 		  <li>Todos los módulos que tiene tu sistema hasta ahora</li>
-		  <li>Funcionando</li>
+		  <li>Con las funcionalidades establecidas</li>
 		  <li>Registro de cambios (saber quién edita qué)</li>
 		  <li>Permisos de usuario</li>
 		  <li>Migración de la base de datos</li>
@@ -625,7 +504,7 @@
 	  <div class="inc-col">
 		<h3>Qué no incluye</h3>
 		<ul class="inc-list exc-list">
-		  <li>Funcionalidades o módulos adicionales.</li>
+		  <li>Funcionalidades o módulos adicionales</li>
 		  <li>Cambios drásticos de lógica o funcionalidad a módulos ya existentes</li>
 		  <li>Mantenimiento mensual</li>
 		</ul>
@@ -646,9 +525,9 @@
 	</div>
   </section>
 
-  <!-- 05 -->
+  <!-- 04 — A FUTURO -->
   <section class="section">
-	<span class="sec-label label label--blue">05</span>
+	<span class="sec-label label label--blue">04</span>
 	<h2 class="sec-title">A futuro</h2>
 	<p class="p">Mi propuesta es que trabajemos por componente (o funcionalidad). Cada componente lo revisamos y cotizamos como un proyecto aparte. Como ejemplo de cosas que podrías considerar en el nuevo sistema:</p>
 
@@ -668,42 +547,36 @@
 	</div>
   </section>
 
-  <!-- 06 FAQs -->
+  <!-- 05 — FAQs -->
   <section class="section">
-	<span class="sec-label label label--blue">06</span>
+	<span class="sec-label label label--blue">05</span>
 	<h2 class="sec-title">Preguntas<br>frecuentes</h2>
-	
+
 	<div class="faq-grid">
 	  <div>
 		<h3 class="faq-q">¿Me aseguras que todo va a funcionar al 100% a la primera?</h3>
 		<p class="faq-a">Haré lo posible, ya sabes que yo pruebo hasta el cansancio, pero es la prioridad.</p>
 	  </div>
-	  
 	  <div>
 		<h3 class="faq-q">¿La UI y UX que muestres en los avances es final?</h3>
 		<p class="faq-a">No, solo es para fines de demostración.</p>
 	  </div>
-	  
 	  <div>
 		<h3 class="faq-q">¿Por qué ese precio?</h3>
 		<p class="faq-a">Investigación, migración, rediseño estructural, optimización, testing, UX y UI.</p>
 	  </div>
-
 	  <div>
 		<h3 class="faq-q">¿Te vas a tardar los casi dos meses en terminar?</h3>
 		<p class="faq-a">Puede que sí, o que termine mucho más rápido. El estimado es por seguridad.</p>
 	  </div>
-
 	  <div>
 		<h3 class="faq-q">Si se me ocurre algo nuevo, ¿lo puedes implementar ahorita?</h3>
 		<p class="faq-a">En cuanto termine estos módulos ya existentes nos vamos paso a paso con las cosas extra.</p>
 	  </div>
-
 	  <div>
 		<h3 class="faq-q">¿Podemos poner todo lo que se me ocurra?</h3>
 		<p class="faq-a">Primero investigo y vamos viendo.</p>
 	  </div>
-
 	  <div>
 		<h3 class="faq-q">¿Te puedo mandar WhatsApp a las 10 pm para hacer cambios?</h3>
 		<p class="faq-a">Porfa no.</p>
